@@ -1,5 +1,4 @@
-
-       const SIGN = document.getElementById('sign');
+const SIGN = document.getElementById('sign');
 const POWER_BTN = document.getElementById('powerBtn');
 const menuBtn = document.getElementById('menuBtn');
 const navLinks = document.getElementById('navLinks');
@@ -10,21 +9,38 @@ let startupTimeouts = [];
 let currentPageId = 'home';
 
 // ------------------- LÓGICA DO MENU MOBILE -------------------
-// Localize ou adicione esta parte no seu script.js
-if (menuBtn && navLinks) {
-    menuBtn.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        const expanded = navLinks.classList.contains('active');
-        menuBtn.setAttribute('aria-expanded', expanded);
-    });
-}
-// Fechar menu ao clicar em um link (Importante para mobile)
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
+// --- LÓGICA DO MENU MOBILE UNIFICADA (CORRIGIDA) ---
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    if (menuBtn && navLinks) {
+        menuBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinks.classList.toggle('active'); // Abre/fecha o menu
+            menuBtn.classList.toggle('active');  // <--- ESSA LINHA FAZ A COR MUDAR
+            
+            const isExpanded = navLinks.classList.contains('active');
+            menuBtn.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Fechar ao clicar em um link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuBtn.classList.remove('active'); // <--- Remove a cor ao clicar no link
+                menuBtn.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Fechar ao clicar fora do menu
+        document.addEventListener('click', () => {
             navLinks.classList.remove('active');
+            menuBtn.classList.remove('active'); // <--- Remove a cor ao clicar fora
             menuBtn.setAttribute('aria-expanded', 'false');
         });
-    });
+    }
+});
 
 // ------------------- FUNÇÕES DE EFEITO NEON -------------------
 function clearAllTimers() {
@@ -167,4 +183,4 @@ function copyEmail() {
             btnText.textContent = originalText;
         }, 2000);
     });
-}
+}  

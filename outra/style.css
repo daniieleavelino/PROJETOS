@@ -93,7 +93,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -284,8 +284,8 @@ nav {
 .power-control-wrapper {
     position: fixed;
     bottom: 40px;
-    left: 2vw;
-    margin:0;
+    left: 1vw;
+    margin: 0;
     /* Alterado de 0 para 20px para não colar na borda */
     display: flex;
     flex-direction: column;
@@ -296,7 +296,7 @@ nav {
 
 .control-label {
     font-family: var(--font-sub);
-    font-size: 0.5rem;
+    font-size: 0.7rem;
     color: rgba(255, 255, 255, 0.3);
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -657,7 +657,7 @@ input:checked+.slider:before {
 }
 
 .tech-badge-level {
-    font-size: 0.7rem;
+    font-size: 0.;
     opacity: 0.7;
     margin-left: 4px;
 }
@@ -722,31 +722,30 @@ input:checked+.slider:before {
 
     /* CORREÇÃO DO BOTÃO MOBILE: Alinhado à esquerda com espaço */
     #home .power-control-wrapper {
+
         position: fixed;
         bottom: 40px;
-        left: 20px;
+        left: 2vw;
         margin: 0;
-        align-self: unset;
+        /* Alterado de 0 para 20px para não colar na borda */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        z-index: 1001;
+
     }
 
-
-    /* CORREÇÃO SOBRE MIM: Cards visíveis */
-    .about-grid {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 20px;
-        height: auto !important;
-        padding: 20px 0;
-    }
-
-    .about-card {
+    /*SOBRE MIM*/
+    #sobre-mim .about-card {
         flex: 1 1 100%;
-        width: 100% !important;
-        position: relative !important;
-        inset: auto !important;
-        margin: 0 !important;
+        /* Ocupa 100% da largura */
+        width: 50%;
+        /* Garante que o card ocupe toda a largura possível */
         padding: 25px;
         box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+        margin: 0;
+        /* Remove margens extras */
     }
 
     .about-header-block .section-title {
@@ -848,14 +847,17 @@ input:checked+.slider:before {
         color: #ccc;
     }
 
-    .menu-icon svg rect {
-        fill: var(--neon-pink);
-        filter: drop-shadow(0 0 5px var(--neon-pink));
-        transition: all 0.3s ease;
+    /* CORRETO PARA O ÍCONE ATUAL */
+    .menu-icon .material-symbols-outlined {
+        color: var(--neon-pink) !important;
+        text-shadow: 0 0 5px var(--neon-pink);
+        transition: all 0.1s ease;
+        display: block;
     }
 
-    .menu-icon.active svg rect {
-        fill: var(--neon-cyan);
-        filter: drop-shadow(0 0 8px var(--neon-cyan));
+    /* Quando o botão pai (.menu-icon) ganha a classe .active do JS */
+    .menu-icon.active .material-symbols-outlined {
+        color: var(--neon-cyan) !important;
+        text-shadow: 0 0 8px var(--neon-cyan);
     }
 }

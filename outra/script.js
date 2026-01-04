@@ -9,7 +9,7 @@ let startupTimeouts = [];
 let currentPageId = 'home';
 
 // ------------------- LÓGICA DO MENU MOBILE -------------------
-// --- LÓGICA DO MENU MOBILE UNIFICADA ---
+// --- LÓGICA DO MENU MOBILE UNIFICADA (CORRIGIDA) ---
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menuBtn');
     const navLinks = document.getElementById('navLinks');
@@ -17,7 +17,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuBtn && navLinks) {
         menuBtn.addEventListener('click', (e) => {
             e.stopPropagation();
-            navLinks.classList.toggle('active');
+            navLinks.classList.toggle('active'); // Abre/fecha o menu
+            menuBtn.classList.toggle('active');  // <--- ESSA LINHA FAZ A COR MUDAR
+            
             const isExpanded = navLinks.classList.contains('active');
             menuBtn.setAttribute('aria-expanded', isExpanded);
         });
@@ -26,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
+                menuBtn.classList.remove('active'); // <--- Remove a cor ao clicar no link
                 menuBtn.setAttribute('aria-expanded', 'false');
             });
         });
@@ -33,6 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Fechar ao clicar fora do menu
         document.addEventListener('click', () => {
             navLinks.classList.remove('active');
+            menuBtn.classList.remove('active'); // <--- Remove a cor ao clicar fora
             menuBtn.setAttribute('aria-expanded', 'false');
         });
     }
