@@ -52,13 +52,12 @@ body {
 .bg-overlay.default-bg {
     background:
         linear-gradient(to right, rgba(5, 5, 16, 0.8) 0%, rgba(5, 5, 16, 0) 70%),
-        url('fotogemini.jpeg');
+        url('eu.jpeg');
     background-size: cover;
     background-position: center 30%;
 }
 
 .bg-overlay.alt-bg {
-    background: url('fundo6.jpg');
     background-size: cover;
     background-position: center;
 }
