@@ -1,4 +1,4 @@
-/* Variáveis de Cores (Paleta Neon) */
+/* ==================== VARIÁVEIS DE CORES (PALETA NEON) ==================== */
 :root {
     /*CORES*/
     --bg-color: #0a0a0c;
@@ -24,7 +24,7 @@
     --hero-overlay-opacity: 1;
 }
 
-/* Reset e Base */
+/* ==================== RESET E BASE ==================== */
 * {
     margin: 0;
     padding: 0;
@@ -39,7 +39,7 @@ body {
     height: 100%;
 }
 
-/* Efeitos Visuais de Fundo */
+/* ==================== EFEITOS VISUAIS DE FUNDO ==================== */
 .bg-overlay {
     position: fixed;
     inset: 0;
@@ -97,7 +97,7 @@ body {
     padding: 0 20px;
 }
 
-/* NAV - Menu Superior */
+/* ==================== NAV - MENU SUPERIOR ==================== */
 nav {
     display: flex;
     justify-content: space-between;
@@ -164,7 +164,7 @@ nav {
     display: block;
 }
 
-/* ESTRUTURA E TRANSIÇÃO */
+/* ==================== ESTRUTURA E TRANSIÇÃO ==================== */
 .page {
     position: fixed;
     inset: 0;
@@ -204,7 +204,7 @@ nav {
     width: 100%;
 }
 
-/* HOME */
+/* ==================== HOME ==================== */
 #home {
     justify-content: center;
     align-items: flex-start;
@@ -285,7 +285,6 @@ nav {
     bottom: 40px;
     left: 1vw;
     margin: 0;
-    /* Alterado de 0 para 20px para não colar na borda */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -346,11 +345,7 @@ input:checked+.slider:before {
     background: #2e7d32;
 }
 
-.status-label {
-    display: none;
-}
-
-/* SOBRE MIM */
+/* ==================== SOBRE MIM ==================== */
 #sobre-mim .section-text {
     margin: 10px auto 0;
     font-family: var(--font-corpo);
@@ -454,7 +449,7 @@ input:checked+.slider:before {
     transform: translateX(5px);
 }
 
-/* PROJETOS */
+/* ==================== PROJETOS ==================== */
 #projetos .project-grid {
     display: flex;
     justify-content: center;
@@ -535,7 +530,7 @@ input:checked+.slider:before {
     transform: scale(1.05);
 }
 
-/* CONTATO */
+/* ==================== CONTATO ==================== */
 .contact-block {
     display: flex;
     flex-direction: column;
@@ -615,7 +610,7 @@ input:checked+.slider:before {
     background: rgba(255, 255, 255, 0.02);
 }
 
-/* Tech Stack */
+/* ============== TECH STACK (quadradinhos hard skills) ============== */
 .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -656,12 +651,12 @@ input:checked+.slider:before {
 }
 
 .tech-badge-level {
-    font-size: 0.;
+    font-size: 0.8rem;
     opacity: 0.7;
     margin-left: 4px;
 }
 
-/* FOOTER */
+/* ==================== FOOTER ==================== */
 .footer {
     position: fixed;
     bottom: 0;
@@ -678,7 +673,7 @@ input:checked+.slider:before {
     border-top: 1px solid rgba(0, 255, 255, 0.05);
 }
 
-/* --------------------------- RESPONSIVIDADE & MOBILE MENU --------------------------- */
+/* ==================== RESPONSIVIDADE & MOBILE MENU ==================== */
 @media (max-width: 768px) {
 
     /* OCULTA A IMAGEM DE FUNDO NA HOME */
@@ -687,18 +682,18 @@ input:checked+.slider:before {
     }
 
     .neon-text {
-        font-size: clamp(2.8rem, 8vw, 4.6rem);
+        font-size: clamp(4rem, 8vw, 4.6rem);
         transform: rotate(-3deg);
         text-align: center;
     }
 
     .subtitle {
-        font-size: clamp(0.9rem, 2vw, 1.05rem);
+        font-size: clamp(1rem, 2vw, 1.05rem);
         letter-spacing: 0.16em;
         text-align: center;
     }
 
-    /* Home */
+    /* HOME */
     #home {
         display: flex !important;
         flex-direction: column;
@@ -719,14 +714,12 @@ input:checked+.slider:before {
         align-self: center;
     }
 
-    /* CORREÇÃO DO BOTÃO MOBILE: Alinhado à esquerda com espaço */
+    /* BOTÃO MOBILE*/
     #home .power-control-wrapper {
-
         position: fixed;
         bottom: 40px;
         left: 2vw;
-        margin: 0;
-        /* Alterado de 0 para 20px para não colar na borda */
+        margin: 0;    
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -787,10 +780,6 @@ input:checked+.slider:before {
         align-self: center;
     }
 
-    .copy-email-btn {
-        width: 100%;
-    }
-
     /* Tech Stack */
     .tech-stack {
         justify-content: center;
@@ -817,6 +806,17 @@ input:checked+.slider:before {
     /* Menu Mobile Ícone e Lista */
     .menu-icon {
         display: flex;
+    }
+    .menu-icon .material-symbols-outlined {
+        color: var(--neon-pink) !important;
+        text-shadow: 0 0 5px var(--neon-pink);
+        transition: all 0.1s ease;
+        display: block;
+    }
+
+    .menu-icon.active .material-symbols-outlined {
+        color: var(--neon-cyan) !important;
+        text-shadow: 0 0 8px var(--neon-cyan);
     }
 
     .nav-links {
@@ -846,17 +846,4 @@ input:checked+.slider:before {
         color: #ccc;
     }
 
-    /* CORRETO PARA O ÍCONE ATUAL */
-    .menu-icon .material-symbols-outlined {
-        color: var(--neon-pink) !important;
-        text-shadow: 0 0 5px var(--neon-pink);
-        transition: all 0.1s ease;
-        display: block;
-    }
-
-    /* Quando o botão pai (.menu-icon) ganha a classe .active do JS */
-    .menu-icon.active .material-symbols-outlined {
-        color: var(--neon-cyan) !important;
-        text-shadow: 0 0 8px var(--neon-cyan);
-    }
 }

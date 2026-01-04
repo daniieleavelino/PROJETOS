@@ -1,3 +1,4 @@
+// ==================== VARIÁVEIS GLOBAIS ====================
 const SIGN = document.getElementById('sign');
 const POWER_BTN = document.getElementById('powerBtn');
 const menuBtn = document.getElementById('menuBtn');
@@ -8,8 +9,7 @@ let randomFlickerTimeout = null;
 let startupTimeouts = [];
 let currentPageId = 'home';
 
-// ------------------- LÓGICA DO MENU MOBILE -------------------
-// --- LÓGICA DO MENU MOBILE UNIFICADA (CORRIGIDA) ---
+// ==================== LÓGICA DO MENU MOBILE ====================
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtn = document.getElementById('menuBtn');
     const navLinks = document.getElementById('navLinks');
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// ------------------- FUNÇÕES DE EFEITO NEON -------------------
+// ==================== FUNÇÕES DE EFEITO NEON ====================
 function clearAllTimers() {
     if (randomFlickerTimeout) clearTimeout(randomFlickerTimeout);
     startupTimeouts.forEach(id => clearTimeout(id));
@@ -89,7 +89,7 @@ function triggerRandomFlicker() {
     }, timeToNext);
 }
 
-// LÓGICA DO INTERRUPTOR
+// ==================== LÓGICA DO INTERRUPTOR ====================
 if (POWER_BTN) {
     POWER_BTN.addEventListener('change', () => {
         if (POWER_BTN.checked) {
@@ -104,7 +104,7 @@ if (POWER_BTN) {
     });
 }
 
-// ------------------- NAVEGAÇÃO ENTRE PÁGINAS -------------------
+// ==================== NAVEGAÇÃO ENTRE PÁGINAS ====================
 function handlePageChange(newId) {
     if (newId === currentPageId) return;
 
@@ -148,7 +148,7 @@ function updatePageState(id) {
     }
 }
 
-// Event Listeners de inicialização
+// ==================== EVENT LISTENERS DE INICIALIZAÇÃO ====================
 document.addEventListener('DOMContentLoaded', () => {
     const navLinksList = document.querySelectorAll('.nav-links a');
     navLinksList.forEach(link => {
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Função de copiar e-mail
+// ==================== FUNÇÃO DE COPIAR E-MAIL ====================
 function copyEmail() {
     const email = 'daniele.avelino@outlook.com';
     const btn = document.querySelector('.btn-copy-pill');
