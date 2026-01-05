@@ -31,6 +31,46 @@
     box-sizing: border-box;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    background: var(--neon-cyan);
+    color: var(--bg-color);
+    padding: 8px;
+    text-decoration: none;
+    z-index: 1000;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.skip-link:focus {
+    top: 6px;
+}
+
+/* ==================== FOCO VISÍVEL ==================== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--neon-cyan);
+    outline-offset: 2px;
+}
+
+/* ==================== ACESSIBILIDADE ==================== */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-main);

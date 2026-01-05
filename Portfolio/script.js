@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
             menuBtn.classList.remove('active'); // <--- Remove a cor ao clicar fora
             menuBtn.setAttribute('aria-expanded', 'false');
         });
+
+        // Fechar com Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                menuBtn.classList.remove('active');
+                menuBtn.setAttribute('aria-expanded', 'false');
+            }
+        });
     }
 });
 
@@ -174,13 +183,21 @@ function copyEmail() {
     const email = 'daniele.avelino@outlook.com';
     const btn = document.querySelector('.btn-copy-pill');
     const btnText = btn.querySelector('span');
+    const statusDiv = document.getElementById('copy-status');
     navigator.clipboard.writeText(email).then(() => {
         const originalText = btnText.textContent;
         btn.classList.add('copied');
         btnText.textContent = 'Copiado!';
+        statusDiv.textContent = 'E-mail copiado para a área de transferência';
         setTimeout(() => {
             btn.classList.remove('copied');
             btnText.textContent = originalText;
+            statusDiv.textContent = '';
+        }, 2000);
+    }).catch(() => {
+        statusDiv.textContent = 'Erro ao copiar e-mail';
+        setTimeout(() => {
+            statusDiv.textContent = '';
         }, 2000);
     });
 }  

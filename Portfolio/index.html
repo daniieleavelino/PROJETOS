@@ -20,6 +20,7 @@
 </head>
 
 <body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
     <div class="bg-overlay default-bg" aria-hidden="true"></div>
     <div class="hero-split-overlay" aria-hidden="true"></div>
 
@@ -40,7 +41,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <!-- Seção Home -->
         <section id="home" class="page container" aria-label="Página Home">
             <div class="home-inner">
@@ -138,9 +139,10 @@
                 <div class="contact-item email-group">
                     <i class="fa-regular fa-envelope" aria-hidden="true"></i>
                     <a href="mailto:daniele.avelino@outlook.com" class="contact-link">daniele.avelino@outlook.com</a>
-                    <button class="btn-copy-pill" onclick="copyEmail()" title="Copiar e-mail">
+                    <button class="btn-copy-pill" onclick="copyEmail()" title="Copiar e-mail" aria-describedby="copy-status">
                         <i class="fa-regular fa-copy"></i> <span>Copiar</span>
                     </button>
+                    <div id="copy-status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
                 </div>
                 <div class="contact-item">
                     <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
