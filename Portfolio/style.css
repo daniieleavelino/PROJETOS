@@ -90,9 +90,8 @@ body {
 }
 
 .bg-overlay.default-bg {
-    background:
-        linear-gradient(to right, rgba(5, 5, 16, 0.8) 0%, rgba(5, 5, 16, 0) 70%),
-        url('eu.jpeg');
+    background:       
+        url('imagem.png');
     background-size: cover;
     background-position: center 30%;
 }
@@ -102,34 +101,7 @@ body {
     background-position: center;
 }
 
-.hero-split-overlay {
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-    background:
-        radial-gradient(circle at var(--hero-glow-pos), var(--hero-glow-color) 0%, var(--hero-glow-mid) 18%, var(--hero-glow-fall) 36%, transparent 48%),
-        linear-gradient(to right, var(--hero-dark-left) 0%, var(--hero-dark-mid) 45%, var(--hero-dark-right) 100%);
-    opacity: var(--hero-overlay-opacity);
-    background-size: cover;
-    transition: opacity 0.45s ease-in-out, transform 0.45s ease-in-out;
-    mix-blend-mode: overlay;
-    will-change: opacity, transform;
-}
 
-@media (max-width: 1024px) {
-    .hero-split-overlay {
-        --hero-glow-pos: 14% 45%;
-        --hero-overlay-opacity: 0.9;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-split-overlay {
-        --hero-glow-pos: 8% 40%;
-        --hero-overlay-opacity: 0.65;
-    }
-}
 
 .container {
     max-width: 1400px;
@@ -258,7 +230,7 @@ nav {
     align-items: flex-start;
     gap: 18px;
     max-width: 800px;
-    margin-left: 0;
+    margin-left: 100px;
 }
 
 .sign-container {
