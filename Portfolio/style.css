@@ -91,7 +91,7 @@ body {
 
 .bg-overlay.default-bg {
     background:       
-        url('imagem.png');
+        url('images/imagem.png');
     background-size: cover;
     background-position: center 30%;
 }

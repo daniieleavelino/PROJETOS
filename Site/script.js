@@ -6,160 +6,161 @@ const database = [
         style: "Korean Aesthetic",
         desc: "O equilíbrio perfeito entre o minimalismo moderno e a sofisticação de Seoul. Uma estética polida e atemporal.",
         pieces: ["Blazer Oversized", "Tênis Plataforma", "Bolsa Baguete"],
-        img: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=500",
-        dorama: { char: "Hong Cha-young", title: "Vincenzo", dimg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400" }
+        img: "images/korean.webp",
+        dorama: { char: "Hong Cha-young", title: "Vincenzo", dimg: "imagens-inspiracoes/korean.webp" }
     },
     {
         id: "japandi",
         style: "Japandi",
         desc: "A fusão serena do minimalismo japonês com a funcionalidade escandinava. Tons terrosos e orgânicos.",
         pieces: ["Linho Rústico", "Sandálias de Tiras", "Tons de Areia"],
-        img: "https://images.unsplash.com/photo-1508609349937-5ec4ae374ebf?q=80&w=500",
-        dorama: { char: "Yoo Na-bi", title: "Nevertheless", dimg: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=400" }
+        img: "images/japandi.webp",
+        dorama: { char: "Yoo Na-bi", title: "Nevertheless", dimg: "imagens-inspiracoes/japandi.webp" }
     },
     {
         id: "cyberpunk",
         style: "Cyberpunk",
         desc: "Um visual futurista distópico. Pense em luzes neon, tecidos tecnológicos e uma vibe high-tech.",
         pieces: ["Jaqueta neon", "Calça cargo", "Óculos LED"],
-        img: "https://images.unsplash.com/photo-1545486332-9e0999c535b2?q=80&w=500",
-        dorama: { char: "Gang Seo-hae", title: "Sisyphus: The Myth", dimg: "https://images.unsplash.com/photo-1514539079130-25950c84af65?q=80&w=400" }
+        img: "images/cyberpunk.webp",
+        dorama: { char: "Gang Seo-hae", title: "Sisyphus: The Myth", dimg: "imagens-inspiracoes/cyberpunk.webp" }
     },
     {
         id: "vaporwave",
         style: "Vaporwave",
         desc: "Nostalgia digital dos anos 90. Glitch art, estátuas gregas e tons de rosa e ciano neon.",
         pieces: ["Camisa Estampada", "Óculos Retrô", "Cores Pastel Neon"],
-        img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=500",
-        dorama: { char: "Baek Yi-jin", title: "Twenty-Five Twenty-One", dimg: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=400" }
-    },
-    {
-        id: "y2k",
-        style: "Y2K",
-        desc: "O otimismo vibrante dos anos 2000. Brilhos, cinturas baixas e estéticas futuristas retrô.",
-        pieces: ["Top Borboleta", "Saia Plissada", "Bolsa Baguette"],
-        img: "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?q=80&w=500",
-        dorama: { char: "Na Hee-do", title: "Twenty-Five Twenty-One", dimg: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=400" }
+        img: "images/vaporwave.webp",
+        dorama: { char: "Baek Yi-jin", title: "Twenty-Five Twenty-One", dimg: "imagens-inspiracoes/vaporwave.webp" }
     },
     {
         id: "dark-aesthetic",
         style: "Dark Aesthetic",
         desc: "Elegância sombria e gótica moderna. Rendas pretas e silhuetas dramáticas com mistério.",
         pieces: ["Sobretudo Preto", "Coturnos", "Correntes Prateadas"],
-        img: "https://images.unsplash.com/photo-1515462277126-2dd0c162007a?q=80&w=500",
-        dorama: { char: "Ko Mun-yeong", title: "It's Okay to Not Be Okay", dimg: "https://images.unsplash.com/photo-1509248961158-e54f6934749c?q=80&w=400" }
+        img: "images/dark-aesthetic.webp",
+        dorama: { char: "Ko Mun-yeong", title: "It's Okay to Not Be Okay", dimg: "imagens-inspiracoes/dark-aesthetic.webp" }
     },
+    {
+        id: "y2k",
+        style: "Y2K",
+        desc: "O otimismo vibrante dos anos 2000. Brilhos, cinturas baixas e estéticas futuristas retrô.",
+        pieces: ["Top Borboleta", "Saia Plissada", "Bolsa Baguette"],
+        img: "images/y2k.webp",
+        dorama: { char: "Na Hee-do", title: "Twenty-Five Twenty-One", dimg: "imagens-inspiracoes/y2k.webp" }
+    },
+    
     {
         id: "softgirl",
         style: "Soft Girl",
         desc: "A estética da delicadeza extrema. Tons pastéis e acessórios que transmitem doçura.",
         pieces: ["Cardigan lilás", "Presilhas de pérola", "Meias Brancas"],
-        img: "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=500",
-        dorama: { char: "Im Ju-kyung", title: "True Beauty", dimg: "https://images.unsplash.com/photo-1516062423079-7ca13cdc7f5a?q=80&w=400" }
+        img: "images/softgirl.webp",
+        dorama: { char: "Im Ju-kyung", title: "True Beauty", dimg: "imagens-inspiracoes/softgirl.webp" }
     },
     {
         id: "grunge",
         style: "Grunge",
         desc: "Rebeldia urbana e conforto desleixado. Camisas de flanela e atitude punk moderna.",
         pieces: ["Camisa Xadrez", "Calça Rasgada", "Tênis surrado"],
-        img: "https://images.unsplash.com/photo-1520190282161-0428519e495f?q=80&w=500",
-        dorama: { char: "Jo Yi-seo", title: "Itaewon Class", dimg: "https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=400" }
+        img: "images/grunge.webp",
+        dorama: { char: "Jo Yi-seo", title: "Itaewon Class", dimg: "imagens-inspiracoes/grunge.webp" }
     },
     {
         id: "indie",
         style: "Indie",
         desc: "Individualidade e cores retrô. Uma mistura vibrante de vintage com atitude moderna.",
         pieces: ["Bucket Hat", "Calça Patchwork", "Óculos Coloridos"],
-        img: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?q=80&w=500",
-        dorama: { char: "Kim Mi-so", title: "Secretary Kim", dimg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400" }
+        img: "images/indie.webp",
+        dorama: { char: "Kim Mi-so", title: "Secretary Kim", dimg: "imagens-inspiracoes/indie.webp" }
     },
     {
         id: "minimal",
         style: "Minimal",
         desc: "O luxo silencioso. Cortes impecáveis e tons neutros que provam que menos é mais.",
         pieces: ["Alfaiataria", "Cores Neutras", "Camisa Branca"],
-        img: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=500",
-        dorama: { char: "Yoon Hye-jin", title: "Hometown Cha-Cha-Cha", dimg: "https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=400" }
+        img: "images/minimal.webp",
+        dorama: { char: "Yoon Hye-jin", title: "Hometown Cha-Cha-Cha", dimg: "imagens-inspiracoes/minimal.webp" }
     },
     {
         id: "retro",
         style: "Retro",
         desc: "Nostalgia charmosa das décadas passadas. Cores quentes e cortes clássicos de Seoul.",
         pieces: ["Pólo Vintage", "Saia Midi", "Lenços"],
-        img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=500",
-        dorama: { char: "Sung Deok-mi", title: "Her Private Life", dimg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400" }
+        img: "images/retro.webp",
+        dorama: { char: "Sung Deok-mi", title: "Her Private Life", dimg: "imagens-inspiracoes/retro.webp" }
     },
     {
         id: "gothic",
         style: "Gothic",
         desc: "Elegância sombria. Rendas pretas e silhuetas dramáticas para uma alma misteriosa.",
         pieces: ["Corset", "Rendas", "Plataformas"],
-        img: "https://images.unsplash.com/photo-1515462277126-2dd0c162007a?q=80&w=500",
-        dorama: { char: "Ko Mun-yeong", title: "It's Okay", dimg: "https://images.unsplash.com/photo-1509248961158-e54f6934749c?q=80&w=400" }
+        img: "images/gothic.webp",
+        dorama: { char: "Ko Mun-yeong", title: "It's Okay", dimg: "imagens-inspiracoes/gothic.webp" }
     },
     {
         id: "kawaii",
         style: "Kawaii",
         desc: "Fofura em cada detalhe. Personagens, cores vibrantes e alegria no visual.",
         pieces: ["Suéter Animado", "Meias 7/8", "Acessórios de Pelúcia"],
-        img: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=500",
-        dorama: { char: "Kim Bok-joo", title: "Weightlifting Fairy", dimg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400" }
+        img: "images/kawaii.webp",
+        dorama: { char: "Kim Bok-joo", title: "Weightlifting Fairy", dimg: "imagens-inspiracoes/kawaii.webp" }
     },
     {
         id: "cottagecore",
         style: "Cottagecore",
         desc: "Vida simples e camponesa. Estampas florais e tecidos naturais para almas românticas.",
         pieces: ["Vestido Floral", "Cesta de Vime", "Chapéu de Palha"],
-        img: "https://images.unsplash.com/photo-1523381235312-3a1683db21c2?q=80&w=500",
-        dorama: { char: "Dong-baek", title: "Camellia Blooms", dimg: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=400" }
+        img: "images/cottagecore.webp",
+        dorama: { char: "Dong-baek", title: "Camellia Blooms", dimg: "imagens-inspiracoes/cottagecore.webp" }
     },
     {
         id: "dark-academia",
         style: "Dark Academia",
         desc: "Intelectualismo clássico. Marrons e xadrez inspirados em bibliotecas antigas.",
         pieces: ["Blazer de Lã", "Mocassim", "Saia Xadrez"],
-        img: "https://images.unsplash.com/photo-1589363360147-442874f6032b?q=80&w=500",
-        dorama: { char: "Kang Ye-seo", title: "Sky Castle", dimg: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=400" }
+        img: "images/dark-academia-.webp",
+        dorama: { char: "Kang Ye-seo", title: "Sky Castle", dimg: "imagens-inspiracoes/dark-academia.webp" }
     },
     {
         id: "light-academia",
         style: "Light Academia",
         desc: "O lado ensolarado do estudo. Foco em museus e artes clássicas com cores claras.",
         pieces: ["Suéter Tricô", "Saia Bege", "Boina"],
-        img: "https://images.unsplash.com/photo-1511367461989-f85a21fda167?q=80&w=500",
-        dorama: { char: "Ji-eun", title: "Full House", dimg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=400" }
+        img: "images/light-academia.webp",
+        dorama: { char: "Ji-eun", title: "Full House", dimg: "imagens-inspiracoes/light-academia.webp" }
     },
     {
         id: "techwear",
         style: "Techwear",
         desc: "Funcionalidade urbana extrema. Roupas projetadas para durar em qualquer cenário.",
         pieces: ["Colete Utilitário", "Cintos Táticos", "Máscara"],
-        img: "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=500",
-        dorama: { char: "Seo Ah-ri", title: "Celebrity", dimg: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=400" }
+        img: "images/techwear.webp",
+        dorama: { char: "Seo Ah-ri", title: "Celebrity", dimg: "imagens-inspiracoes/techwear.webp" }
     },
     {
         id: "neo-futurismo",
         style: "Neo-futurismo",
         desc: "Linhas arrojadas e materiais inovadores. A moda que antecipa o amanhã de Seoul.",
         pieces: ["Prateado", "Metálico", "Botas Transparentes"],
-        img: "https://images.unsplash.com/photo-1545486332-9e0999c535b2?q=80&w=500",
-        dorama: { char: "Seo Ah-ri", title: "Celebrity", dimg: "https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=400" }
+        img: "images/neo-futurismo.webp",
+        dorama: { char: "Seo Ah-ri", title: "Celebrity", dimg: "imagens-inspiracoes/neo-futurismo.webp" }
     },
     {
         id: "dramatico-urbano",
         style: "Dramático Urbano",
         desc: "A força da mulher de negócios. Ombreiras marcadas e presença marcante.",
         pieces: ["Terno Estruturado", "Scarpin", "Joias de Ouro"],
-        img: "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=500",
-        dorama: { char: "Cheon Seo-jin", title: "The Penthouse", dimg: "https://images.unsplash.com/photo-1533038590840-1cde6e668a91?q=80&w=400" }
+        img: "images/dramatico-urbano.webp",
+        dorama: { char: "Cheon Seo-jin", title: "The Penthouse", dimg: "imagens-inspiracoes/dramatico-urbano.webp" }
     },
     {
         id: "fairycore",
         style: "Fairycore",
         desc: "Magia traduzida em moda. Tecidos translúcidos e tons de florestas encantadas.",
         pieces: ["Corselete", "Saia Tule", "Flores"],
-        img: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=500",
-        dorama: { char: "Jin Seon-mi", title: "Korean Odyssey", dimg: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=400" }
+        img: "images/farycore.webp",
+        dorama: { char: "Jin Seon-mi", title: "Korean Odyssey", dimg: "imagens-inspiracoes/farycore.webp" }
     },
     
 ];
@@ -277,3 +278,38 @@ if(searchInput) {
 // ==================== INICIALIZAÇÃO DA APLICAÇÃO ====================
 // Executar quando a página carregar completamente
 window.onload = init;
+
+// Lógica para detetar se o utilizador veio do Quiz com um estilo selecionado
+window.addEventListener('DOMContentLoaded', () => {
+    // Verifica se existe o parâmetro "?estilo=" na URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const estiloId = urlParams.get('estilo');
+
+    if (estiloId) {
+        // Aguarda um pequeno momento para o site carregar os cards antes de scrollar
+        setTimeout(() => {
+            // Reutiliza a sua função existente para navegar e dar o efeito de destaque
+            if (typeof goToInspo === 'function') {
+                goToInspo(estiloId);
+            }
+        }, 500);
+    }
+});
+
+// Lógica para capturar o resultado do Quiz e navegar automaticamente
+window.addEventListener('load', () => {
+    const params = new URLSearchParams(window.location.search);
+    const estiloDesejado = params.get('estilo');
+
+    if (estiloDesejado) {
+        console.log("Estilo recebido do quiz:", estiloDesejado);
+        
+        // Damos um tempo para o banco de dados e o DOM carregarem
+        setTimeout(() => {
+            // Chamamos a sua função de navegação que já existe!
+            if (typeof goToInspo === 'function') {
+                goToInspo(estiloDesejado);
+            }
+        }, 800); 
+    }
+});
