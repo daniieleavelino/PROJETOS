@@ -1,6 +1,6 @@
 # ✨ Portfólio de Projetos Web - Daniele Avelino
 
-Olá! Sou a **Daniele**, uma desenvolvedora Front-End em formação, apaixonada por **design criativo**, **UI/UX** e **experiências interativas**.
+Olá! Sou a **Daniele Avelino**, uma desenvolvedora Front-End em formação, apaixonada por **design criativo**, **UI/UX** e **experiências interativas**.
 
 Este repositório reúne minha jornada de aprendizado em desenvolvimento web, onde exploro conceitos de HTML5, CSS3 e JavaScript através de projetos práticos e temáticos.
 
