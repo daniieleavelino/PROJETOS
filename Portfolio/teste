@@ -706,23 +706,19 @@ input:checked+.slider:before {
     }
 
     /* HOME */
-    /* Impede o scroll na Home e garante que ocupe 100% da altura da tela */
     #home {
-        height: 100vh;
-        overflow: hidden; /* Remove o scroll apenas na home */
-        display: flex;
+        display: flex !important;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding: 0 20px;
+        text-align: center;
     }
 
-   .home-inner {
-        margin: 0;
-        display: flex;
+    .home-inner {
+        display: flex !important;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         width: 100%;
     }
 
@@ -731,15 +727,17 @@ input:checked+.slider:before {
     }
 
     /* BOTÃO MOBILE*/
-   /* Botão fixo no canto inferior esquerdo */
     #home .power-control-wrapper {
-        position: absolute; /* Fixa relativo ao #home */
-        bottom: 80px;      /* Distância do rodapé para não cobrir o copyright */
-        left: 20px;        /* Distância da borda esquerda */
-        z-index: 1001;
+        position: fixed;
+        bottom: 40px;
+        left: 2vw;
+        margin: 0;    
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Alinha o texto e o botão à esquerda */
+        align-items: center;
+        gap: 8px;
+        z-index: 1001;
+
     }
 
     /*SOBRE MIM*/

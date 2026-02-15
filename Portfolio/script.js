@@ -201,3 +201,36 @@ function copyEmail() {
         }, 2000);
     });
 }  
+
+// ==================== NAVEGAÇÃO POR SWIPE HORIZONTAL (MOBILE) ====================
+let touchstartX = 0;
+let touchendX = 0;
+
+function checkHorizontalDirection() {
+    const pages = ['home', 'sobre-mim', 'projetos', 'contato'];
+    const currentIndex = pages.indexOf(currentPageId);
+
+    // Arrastar da Direita para a Esquerda (Avançar)
+    if (touchstartX - touchendX > 70) { 
+        if (currentIndex < pages.length - 1) {
+            handlePageChange(pages[currentIndex + 1]);
+        }
+    }
+    // Arrastar da Esquerda para a Direita (Voltar)
+    if (touchendX - touchstartX > 70) {
+        if (currentIndex > 0) {
+            handlePageChange(pages[currentIndex - 1]);
+        }
+    }
+}
+
+document.addEventListener('touchstart', e => {
+    touchstartX = e.changedTouches[0].screenX;
+}, { passive: true });
+
+document.addEventListener('touchend', e => {
+    touchendX = e.changedTouches[0].screenX;
+    if (window.innerWidth <= 768) {
+        checkHorizontalDirection();
+    }
+}, { passive: true });
