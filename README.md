@@ -6,7 +6,7 @@ Este repositório reúne minha jornada de aprendizado em desenvolvimento web, on
 
 ---
 
-## 🚀 Projetos em Destaque?
+## 🚀 Projetos em Destaque
 
 Confira os projetos online clicando em **"Ver Projeto"**.
 
