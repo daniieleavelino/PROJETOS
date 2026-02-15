@@ -712,14 +712,18 @@ input:checked+.slider:before {
         justify-content: center;
         align-items: center;
         padding: 0 20px;
+        
         text-align: center;
     }
 
     .home-inner {
         display: flex !important;
         flex-direction: column;
-        align-items: center;
+        align-items: center;    /* Centraliza horizontalmente */
+        justify-content: center; /* Centraliza verticalmente */
         width: 100%;
+        margin-left: 0;         /* Remove a margem esquerda do desktop */
+        text-align: center;
     }
 
     .sign-container {
@@ -729,7 +733,7 @@ input:checked+.slider:before {
     /* BOTÃO MOBILE*/
     #home .power-control-wrapper {
         position: fixed;
-        bottom: 40px;
+        bottom: 80px;
         left: 2vw;
         margin: 0;    
         display: flex;
@@ -771,7 +775,7 @@ input:checked+.slider:before {
         padding: 25px;
     }
 
-    /* CORREÇÃO CONTATO: Centralizado */
+    /* CONTATO */
     .contact-block {
         max-width: 100%;
         padding: 25px;
