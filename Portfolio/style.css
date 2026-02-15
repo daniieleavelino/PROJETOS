@@ -697,6 +697,7 @@ input:checked+.slider:before {
         font-size: clamp(4rem, 8vw, 4.6rem);
         transform: rotate(-3deg);
         text-align: center;
+        ;
     }
 
     .subtitle {
@@ -733,13 +734,16 @@ input:checked+.slider:before {
     /* BOTÃO MOBILE*/
    /* Botão fixo no canto inferior esquerdo */
     #home .power-control-wrapper {
-        position: absolute; /* Fixa relativo ao #home */
-        bottom: 100px;      /* Distância do rodapé para não cobrir o copyright */
-        left: 20px;        /* Distância da borda esquerda */
-        z-index: 1001;
+        position: fixed;
+        bottom: 100px;
+        left: 20PX;
+        margin: 0;    
         display: flex;
         flex-direction: column;
-        align-items: center; /* Alinha o texto e o botão à esquerda */
+        align-items: center;
+        gap: 8px;
+        z-index: 1001;
+
     }
 
     /*SOBRE MIM*/
