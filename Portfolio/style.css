@@ -694,10 +694,11 @@ input:checked+.slider:before {
     }
 
     .neon-text {
-        font-size: clamp(4rem, 8vw, 4.6rem);
-        transform: rotate(-3deg);
+        font-size: clamp(5rem, 8vw, 4.9rem);
+        transform: rotate(-5deg);
         text-align: center;
-        ;
+        align-items: center;
+        
     }
 
     .subtitle {
@@ -715,7 +716,8 @@ input:checked+.slider:before {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0;
+        padding-top: 80px;
+        padding-bottom: 50px;
     }
 
    .home-inner {
@@ -725,6 +727,7 @@ input:checked+.slider:before {
         align-items: center;
         justify-content: center;
         width: 100%;
+        flex: 0 1 auto;
     }
 
     .sign-container {
