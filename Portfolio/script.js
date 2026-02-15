@@ -205,32 +205,53 @@ function copyEmail() {
 // ==================== NAVEGAÇÃO POR SWIPE HORIZONTAL (MOBILE) ====================
 let touchstartX = 0;
 let touchendX = 0;
+let touchstartY = 0;
+let touchendY = 0;
 
 function checkHorizontalDirection() {
     const pages = ['home', 'sobre-mim', 'projetos', 'contato'];
     const currentIndex = pages.indexOf(currentPageId);
+    
+    const diffX = touchstartX - touchendX;
+    const diffY = touchstartY - touchendY;
 
-    // Arrastar da Direita para a Esquerda (Avançar)
-    if (touchstartX - touchendX > 70) { 
-        if (currentIndex < pages.length - 1) {
-            handlePageChange(pages[currentIndex + 1]);
-        }
-    }
-    // Arrastar da Esquerda para a Direita (Voltar)
-    if (touchendX - touchstartX > 70) {
-        if (currentIndex > 0) {
-            handlePageChange(pages[currentIndex - 1]);
+    // Garante que o movimento foi mais horizontal do que vertical
+    if (Math.abs(diffX) > Math.abs(diffY)) {
+        if (Math.abs(diffX) > 50) { // Sensibilidade do rastro (pixels)
+            if (diffX > 0) {
+                // Arrastou para a Esquerda -> Próxima página
+                if (currentIndex < pages.length - 1) {
+                    handlePageChange(pages[currentIndex + 1]);
+                }
+            } else {
+                // Arrastou para a Direita -> Página anterior
+                if (currentIndex > 0) {
+                    handlePageChange(pages[currentIndex - 1]);
+                }
+            }
         }
     }
 }
 
+// Listeners com tratamento de erro e prevenção de comportamento padrão
 document.addEventListener('touchstart', e => {
     touchstartX = e.changedTouches[0].screenX;
-}, { passive: true });
+    touchstartY = e.changedTouches[0].screenY;
+}, { passive: false });
+
+document.addEventListener('touchmove', e => {
+    // Impede o scroll lateral do navegador durante o gesto
+    if (window.innerWidth <= 768) {
+        const diffX = Math.abs(touchstartX - e.changedTouches[0].screenX);
+        const diffY = Math.abs(touchstartY - e.changedTouches[0].screenY);
+        if (diffX > diffY) e.preventDefault(); 
+    }
+}, { passive: false });
 
 document.addEventListener('touchend', e => {
     touchendX = e.changedTouches[0].screenX;
+    touchendY = e.changedTouches[0].screenY;
     if (window.innerWidth <= 768) {
         checkHorizontalDirection();
     }
-}, { passive: true });
+}, { passive: false });

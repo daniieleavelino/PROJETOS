@@ -734,12 +734,12 @@ input:checked+.slider:before {
    /* Botão fixo no canto inferior esquerdo */
     #home .power-control-wrapper {
         position: absolute; /* Fixa relativo ao #home */
-        bottom: 80px;      /* Distância do rodapé para não cobrir o copyright */
+        bottom: 90px;      /* Distância do rodapé para não cobrir o copyright */
         left: 20px;        /* Distância da borda esquerda */
         z-index: 1001;
         display: flex;
         flex-direction: column;
-        align-items: flex-start; /* Alinha o texto e o botão à esquerda */
+        align-items: center; /* Alinha o texto e o botão à esquerda */
     }
 
     /*SOBRE MIM*/
