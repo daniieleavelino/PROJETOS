@@ -1,142 +1,51 @@
-# ✨ Meus Projetos Web
+# ✨ Portfólio de Projetos Web - Daniele Avelino
 
-Olá! Sou a **Grazizinha**, uma desenvolvedora front-end iniciante apaixonada por **design criativo** e **experiências interativas**.
+Olá! Sou a **Daniele**, uma desenvolvedora Front-End em formação, apaixonada por **design criativo**, **UI/UX** e **experiências interativas**.
 
-Aqui você encontra alguns dos meus projetos web desenvolvidos enquanto aprendo HTML, CSS e JavaScript. Cada projeto é uma oportunidade de explorar novas ideias de design e criatividade!
-
----
-
-## 🎨 Meus Projetos
-
-### 1️⃣ Quiz de Aesthetic 🌈
-
-Um quiz divertido para descobrir qual é seu estilo aesthetic favorito!
-
-**O que tem de especial:**
-- 7 perguntas divertidas sobre suas preferências visuais
-- Descobre 20+ estilos aesthetic diferentes (K-beauty, Cyberpunk, Cottagecore, e muito mais!)
-- Resultado visual bonito com imagem do seu estilo
-- Design colorido e divertido
-- Funciona em celular, tablet e computador
-
-**Tecnologias usadas:** HTML, CSS com gradientes e animações, JavaScript
-
-**Abrir o projeto:**
-- Clique em `Quiz/quiz.html`
+Este repositório reúne minha jornada de aprendizado em desenvolvimento web, onde exploro conceitos de HTML5, CSS3 e JavaScript através de projetos práticos e temáticos.
 
 ---
 
-### 2️⃣ Site Principal 💫
+## 🚀 Projetos em Destaque?
 
-Um site clean e minimalista para exibir minha presença online.
+Confira os projetos online clicando em **"Ver Projeto"**.
 
-**O que tem:**
-- Design moderno e simples
-- Cores harmônicas e agradáveis
-- Fácil de navegar
-- Responsivo (funciona em qualquer tela)
-
-**Tecnologias usadas:** HTML, CSS, um pouco de JavaScript
-
-**Abrir o projeto:**
-- Clique em `Site/index.html`
+| Projeto | Descrição | Tecnologias | Link |
+| :--- | :--- | :--- | :--- |
+| **1️⃣Portfólio Pessoal** | Minha página de apresentação com estética Neon. | HTML, CSS Avançado (Efeitos de luz), JavaScript | [🔗 Ver Projeto](LINK_DO_GITHUB_PAGES/Portfolio/index.html) |
+| **2️⃣ K-Culture Landing Page** | Site responsivo e minimalista focado na cultura pop coreana. Apresenta 20 estilos visuais com layout moderno. | HTML Semântico, CSS Grid/Flexbox, Design Responsivo | [🔗 Ver Projeto](LINK_DO_GITHUB_PAGES/Site/index.html) |
+| **3️⃣Quiz Aesthetic** | Uma aplicação interativa que descobre o estilo visual do usuário através de perguntas lógicas. Foco em lógica de programação e interatividade. | HTML5, CSS3 (Animações), JavaScript (Lógica e DOM) | [🔗 Ver Projeto](LINK_DO_GITHUB_PAGES/Quiz/quiz.html) |
 
 ---
 
-### 3️⃣ Portfolio 👤
+## 🛠️ Tecnologias e Habilidades
 
-Meu portfolio pessoal mostrando meus projetos e habilidades.
+Nesses projetos, apliquei e consolidei os seguintes conhecimentos:
 
-**O que tem:**
-- Galeria dos meus projetos
-- Informações sobre mim
-- Links para redes sociais
-- Design profissional mas criativo
-
-**Tecnologias usadas:** HTML, CSS, JavaScript
-
-**Abrir o projeto:**
-- Clique em `Portfolio/index.html`
+* **Front-End:** HTML5 Semântico, CSS3 (Flexbox, Grid, Animações, Gradientes), JavaScript (ES6+).
+* **Design:** Responsividade (Mobile First), Tipografia, Teoria das Cores.
+* **Ferramentas:** Git, GitHub, VS Code.
 
 ---
 
-## 🚀 Como Usar
+## 💡 O que estou aprendendo
 
-É super simples!
-
-1. **Clique em qualquer arquivo** `.html`
-2. O navegador vai abrir direto
-3. **Pronto!** Nenhuma instalação necessária 🎉
-
-Todos os projetos funcionam direto no navegador sem precisa de configurações complicadas.
+Cada projeto aqui representa um desafio superado:
+* **Lógica de Programação:** Como capturar escolhas do usuário e devolver resultados dinâmicos (visto no Quiz).
+* **Estruturação de Layout:** Criação de interfaces limpas e organizadas.
+* **UX (Experiência do Usuário):** Foco na facilidade de navegação e feedback visual.
 
 ---
 
-## 💡 O Que Estou Aprendendo
+## 🤝 Contato
 
-Esses projetos me ajudaram a aprender:
+Estou aberta a oportunidades de estágio e projetos júnior. Vamos conectar?
 
-✨ **Design e Criatividade**
-- Cores que combinam bem
-- Fontes legíveis e bonitas
-- Animações suaves
-- Layouts criativos
-
-🎯 **Desenvolvimento**
-- Como estruturar HTML
-- CSS responsivo que funciona em qualquer tela
-- JavaScript para fazer coisas interativas
-- Como fazer sites que funcionam em todos os dispositivos
+* [LinkedIn](SEU_LINK_DO_LINKEDIN)
+* [E-mail](mailto:SEU_EMAIL)
 
 ---
 
-## 🎨 Meus Estilos Favoritos
-
-Gosto de trabalhar com:
-- **Cores:** Gradientes, pastéis, cores vibrantes
-- **Animações:** Suaves e que não ficam chatas
-- **Fontes:** Modernas e fáceis de ler
-- **Design:** Minimalista mas com personalidade
-
----
-
-## 📱 Responsivo
-
-Todos os meus projetos foram feitos para funcionar bem em:
-- 📱 Smartphones e tablets
-- 💻 Computadores e notebooks
-- 🖥️ Telas grandes
-
----
-
-## 🌟 Próximas Ideias
-
-Coisas que quero criar no futuro:
-- Mais tipos de quiz interativos
-- Página com meus trabalhos de design
-- Blog pessoal
-- Calculadoras criativas
-- Mais animações e efeitos visuais
-
----
-
-## 🤝 Feedback
-
-Se você tem sugestões ou críticas construtivas sobre meus projetos, adoraria saber!
-Entre em contato ou deixe um comentário. Toda ajuda é bem-vinda na minha jornada de aprendizado! 💕
-
----
-
-## 📞 Me Encontre
-
-[Adicione aqui seus links de contato]
-- 📧 Email
-- 🔗 LinkedIn
-- 🐙 GitHub
-- 🌐 Website
-
----
-
-**Desenvolvido com criatividade e dedicação no aprendizado de web design** 🎨✨
-
-*Última atualização: 13 de fevereiro de 2026*
+<p align="center">
+  <i>Desenvolvido com 💜 por Daniele Avelino</i>
+</p>
