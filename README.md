@@ -12,9 +12,9 @@ Confira os projetos online clicando em **"Ver Projeto"**.
 
 | Projeto | Descrição | Tecnologias | Link |
 | :--- | :--- | :--- | :--- |
-| **1️⃣Portfólio Pessoal** | Minha página de apresentação com estética Neon. | HTML, CSS Avançado (Efeitos de luz), JavaScript | [🔗 Ver Projeto](LINK_DO_GITHUB_PAGES/Portfolio/index.html) |
-| **2️⃣ K-Culture Landing Page** | Site responsivo e minimalista focado na cultura pop coreana. Apresenta 20 estilos visuais com layout moderno. | HTML Semântico, CSS Grid/Flexbox, Design Responsivo | [🔗 Ver Projeto](LINK_DO_GITHUB_PAGES/Site/index.html) |
-| **3️⃣Quiz Aesthetic** | Uma aplicação interativa que descobre o estilo visual do usuário através de perguntas lógicas. Foco em lógica de programação e interatividade. | HTML5, CSS3 (Animações), JavaScript (Lógica e DOM) | [🔗 Ver Projeto](LINK_DO_GITHUB_PAGES/Quiz/quiz.html) |
+| **1️⃣Portfólio Pessoal** | Minha página de apresentação com estética Neon. | HTML, CSS Avançado (Efeitos de luz), JavaScript | [🔗 Ver Projeto]([LINK_DO_GITHUB_PAGES/Portfolio/index.html](https://daniieleavelino.github.io/PROJETOS/Portfolio/)) |
+| **2️⃣ K-Culture Landing Page** | Site responsivo e minimalista focado na cultura pop coreana. Apresenta 20 estilos visuais com layout moderno. | HTML Semântico, CSS Grid/Flexbox, Design Responsivo | [🔗 Ver Projeto]([LINK_DO_GITHUB_PAGES/Site/index.html](https://daniieleavelino.github.io/PROJETOS/Site/)) |
+| **3️⃣Quiz Aesthetic** | Uma aplicação interativa que descobre o estilo visual do usuário através de perguntas lógicas. Foco em lógica de programação e interatividade. | HTML5, CSS3 (Animações), JavaScript (Lógica e DOM) | [🔗 Ver Projeto]([LINK_DO_GITHUB_PAGES/Quiz/quiz.html](https://daniieleavelino.github.io/PROJETOS/Quiz/quiz.html)) |
 
 ---
 
@@ -41,8 +41,8 @@ Cada projeto aqui representa um desafio superado:
 
 Estou aberta a oportunidades de estágio e projetos júnior. Vamos conectar?
 
-* [LinkedIn](SEU_LINK_DO_LINKEDIN)
-* [E-mail](mailto:SEU_EMAIL)
+* [LinkedIn](linkedin.com/in/daniieleavelino)
+* [E-mail](daniele.avelino@outlook.com)
 
 ---
 
